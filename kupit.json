@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "title": "Книга по скорочтению",
+    "vendor_code": "111",
+    "description": "Отличная",
+    "price": 1000,
+    "img": "https://avatars.mds.yandex.net/get-mpic/5222168/img_id3584195976327484538.jpeg/orig"
+  },
+  {
+    "id": "2",
+    "title": "Книги Достоевского",
+    "vendor_code": "222",
+    "description": "Очень хорошо",
+    "price": 350,
+    "img": "books6.png"
+  },
+  {
+    "id": "3",
+    "title": "Книги Пушкина",
+    "vendor_code": "333",
+    "description": "Сложно",
+    "price": 670,
+    "img": "https://img.bizorg.su/goods/c80/44b/c8044ba2c930.png"
+  },
+  {
+    "id": "4",
+    "title": "Как читать вдумчиво",
+    "vendor_code": "444e",
+    "description": "Бестселлер",
+    "price": 430,
+    "img": "https://i.pinimg.com/originals/b4/09/27/b4092735208050619fe6f659082783be.png"
+  },
+  {
+    "id": "5",
+    "title": "Автобиография автора курса",
+    "vendor_code": "4445e",
+    "description": "Бесценно",
+    "price": 2100,
+    "img": "https://avatars.mds.yandex.net/i?id=7acfdd3fc9744bb6490a63ee05e3f4dd936fc3a2-10250482-images-thumbs&n=13"
+  },
+  {
+    "id": "6",
+    "title": "Для дошкольников",
+    "vendor_code": "4446e",
+    "description": "Важно",
+    "price": 4230,
+    "img": "https://yandex-images.clstorage.net/D9KkI6383/b82011MT/SwS1dUG6OclNy9V_iyM_pbZsHLfVQR4hyw-24clMHtxtP0fLXEpTkfi4_DsfwBN2aLhNYdopt_IDo5OzTS0Cx_slxSFlfk3YiF6hzu5jv5XmTclj5FDbgY7eEsT5mRvKu0hQyRotIPZa7_7v6uWWQ0xJuWXsihOlFAS2A6qbdrcJVQbkcyiaTw_rp2oYon0kZI2oRCew-5HeDAc3Dj5MqijZEgm5rpBWei-tXAi1ZBJsrzrn3anGx2WUFdD5yoSXi9R0VKCaCu6fWVd5CnPeZRbcCvaX4JuCP12lpgz_PBn7GFPLm26Cdbovrhwax9Uibk-7dsz5xiV11ZXSOgtVtapm9uWjCJldzhqUeXpSDmV1fdrVJaNrQt4eNmUPDx94yusDiatt8laZ7ewfKMWEYE9eWqePGkbHxxS2UTrJ9ZaqtZdGU0l6D-wb9uso8bzG1WyrRfeSm_OPf_RkPB2sWyu7wakJP1MX2M0uPPhFxxAunnqmPBhnhcUUtTDbaHTG6jUG5YMYigwPqhRbynP-5aStSuWH4qhgbp62dpwtLCgLyUBbeeyAd6i_L6955ASD3z76Z4x7h2WFBERDGClWtevExQWSujvf_XkkiShDX_U0vOoXFnMqc-4upbcO_645WopiyWrck3T7n_7-2ueEQJ18CeSeCTb0dNd1Mggrx1foBQZncbo6zWx7RTu5kh0FBV6K5hSD2iOcP7e2DBy8KMr5MFn5j-OGWLzOnwgmVJCNDjtUb5sVFxYWViBIywZHOXW3ViLqG76d2DT4-6NcV8Z_uzWlcEpj_2_2xxz9nsp56NHICx0BBLu9HE9ZlSbiPOx7Np-Jh9XkhhXy-3iUhqlWV_UTmwo9vatmOUhwTyXE3jpGRAALww_cROdvfx1YaJrDqYmvQ7aIfsxci5W3Ekxfy3Rc-salRoRUMGhpx2Ur1cdGETkInz4IhvlJ8w53FF6J9iVg66H_zZfmDq0NY"
+  },
+  {
+    "id": "7",
+    "title": "Как обнаружить плохую книгу",
+    "vendor_code": "4447e",
+    "description": "Инструкция",
+    "price": 2700,
+    "img": "https://images.tomas.by/i3/categories/knigi-zhurnaly_aee2fe8cfd2bf35_800x600.png"
+  },
+  {
+    "id": "8",
+    "title": "Книжка для записей",
+    "vendor_code": "4448e",
+    "description": "Удобно",
+    "price": 800,
+    "img": "https://ir.ozone.ru/s3/multimedia-1-n/8033102375.jpg"
+  },
+  {
+    "id": "9",
+    "title": "Иван Бунин Жизнь Арсеньева",
+    "vendor_code": "444e",
+    "description": "Невероятно",
+    "price": 440,
+    "img": "https://avatars.mds.yandex.net/get-mpic/4880410/2a00000195916e9264a25173a52ad5f7355b/orig"
+  },
+  {
+    "id": "10",
+    "title": "Иван Бунин Жизнь Арсеньева",
+    "vendor_code": "44410e",
+    "description": "Невероятно",
+    "price": 900,
+    "img": "https://avatars.mds.yandex.net/get-mpic/4880410/2a00000195916e9264a25173a52ad5f7355b/orig"
+  },
+  {
+    "id": "11",
+    "title": "Классические произведения: слуайный набор!",
+    "vendor_code": "44411e",
+    "description": "Рандомная классика",
+    "price": 1100,
+    "img": "https://avatars.mds.yandex.net/get-altay/1027639/2a0000018762b0d6fc8514dd5e471ed89841/XXL_height"
+  }
+]

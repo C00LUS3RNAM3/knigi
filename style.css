@@ -1,0 +1,27 @@
+.link {
+  color: rgb(44, 65, 182);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #08bdea;
+}
+
+.link.active {
+  color: #08bdea;
+  font-weight: bold;
+}
+
+body {
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+p {
+  font-family: ;
+  font-size: 15px;
+}
