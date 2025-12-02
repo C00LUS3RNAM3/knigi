@@ -4,90 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Курс: Как читать книги эффективно?</title>
-    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <style>
-      :root {
-        --primary-color: #2c5530;
-        --secondary-color: #4a7c59;
-        --accent-color: #8fb996;
-        --text-dark: #2d3748;
-        --text-light: #f7fafc;
-        --background: #f8f9fa;
-        --card-bg: #ffffff;
-        --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
       body {
-        font-family: system-ui, -apple-system, sans-serif;
+        font-family: system-ui, sans-serif;
         line-height: 1.6;
-        color: var(--text-dark);
-        background: var(--background);
-        padding: 20px;
+        color: #333;
+        background: #f8f9fa;
+        padding: 15px;
       }
 
       nav {
-        background: var(--card-bg);
-        padding: 1rem;
-        margin-bottom: 2rem;
-        box-shadow: var(--shadow);
+        background: white;
+        padding: 15px;
+        margin-bottom: 20px;
         border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
 
       nav h1 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 1rem;
+        gap: 10px;
+        margin: 0;
       }
 
       .link {
         text-decoration: none;
-        color: var(--primary-color);
-        font-weight: 500;
-        padding: 0.5rem 1rem;
+        color: #2c5530;
+        padding: 8px 15px;
         border-radius: 4px;
-        transition: all 0.3s ease;
       }
 
       .link:hover,
       .link.active {
-        background: var(--accent-color);
-        color: var(--text-light);
+        background: #8fb996;
+        color: white;
       }
 
       .link.active {
-        font-weight: bold;
-        background: var(--secondary-color);
+        background: #4a7c59;
       }
 
       h1,
-      h2,
-      h4 {
-        color: var(--primary-color);
-        margin: 1rem 0;
+      h2 {
+        color: #2c5530;
+        margin: 15px 0;
       }
 
       ul {
-        margin: 1rem 0;
-        padding-left: 2rem;
+        margin: 15px 0;
+        padding-left: 20px;
       }
 
       li {
-        margin: 0.5rem 0;
+        margin: 8px 0;
       }
 
       figure {
-        margin: 1.5rem 0;
+        margin: 15px 0;
         text-align: center;
       }
 
@@ -98,210 +77,96 @@
 
       .thumbnail {
         width: 100px;
-        height: auto;
-        border: 2px solid transparent;
-        transition: border-color 0.3s ease;
-      }
-
-      .thumbnail:hover {
-        border-color: var(--accent-color);
-      }
-
-      .table-container {
-        background: var(--card-bg);
-        padding: 2rem;
-        margin: 2rem 0;
-        border-radius: 8px;
-        box-shadow: var(--shadow);
-        position: relative;
-        overflow: hidden;
-      }
-
-      .table-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.1;
-        z-index: 0;
-        object-fit: cover;
       }
 
       .content-table {
         width: 100%;
         border-collapse: collapse;
-        position: relative;
-        z-index: 1;
       }
 
       .content-table th,
       .content-table td {
-        padding: 12px;
-        text-align: left;
+        padding: 10px;
         border-bottom: 1px solid #ddd;
       }
 
       .content-table th {
-        background: var(--secondary-color);
-        color: var(--text-light);
-      }
-
-      .form-section {
-        background: var(--card-bg);
-        padding: 2rem;
-        margin: 2rem 0;
-        border-radius: 8px;
-        box-shadow: var(--shadow);
-      }
-
-      .form-group {
-        margin-bottom: 1rem;
-      }
-
-      .form-group label {
-        display: block;
-        margin-bottom: 0.5rem;
-        font-weight: 500;
-      }
-
-      .form-group input,
-      .form-group select,
-      .form-group textarea {
-        width: 100%;
-        padding: 8px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        font-size: 1rem;
-      }
-
-      button {
-        background: var(--primary-color);
+        background: #4a7c59;
         color: white;
-        padding: 12px 24px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 1rem;
       }
 
-      button:hover {
-        background: var(--secondary-color);
+      /* Десктоп */
+      @media (min-width: 992px) {
+        body {
+          padding: 30px;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
       }
 
-      .back-to-top {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.5rem 1rem;
-        background: var(--accent-color);
-        color: var(--text-light);
-        text-decoration: none;
-        border-radius: 4px;
-      }
-
-      /* Адаптивные стили */
+      /* Планшет */
       @media (max-width: 768px) {
         body {
           padding: 10px;
         }
 
         nav h1 {
-          flex-direction: column;
-          align-items: center;
-          gap: 0.5rem;
+          gap: 8px;
         }
 
         .link {
-          display: block;
-          text-align: center;
-          margin: 0.2rem 0;
-        }
-
-        figure img {
-          max-width: 100%;
-          height: auto;
+          padding: 6px 12px;
+          font-size: 14px;
         }
 
         .thumbnail {
           width: 80px;
         }
-
-        .table-container {
-          padding: 1rem;
-          margin: 1rem 0;
-        }
-
-        .content-table {
-          font-size: 0.9rem;
-        }
-
-        .content-table th,
-        .content-table td {
-          padding: 8px 4px;
-        }
-
-        .form-section {
-          padding: 1rem;
-          margin: 1rem 0;
-        }
       }
 
+      /* Смартфон */
       @media (max-width: 576px) {
-        h1 {
-          font-size: 1.5rem;
-        }
-
-        h2 {
-          font-size: 1.3rem;
-        }
-
-        ul {
-          padding-left: 1.5rem;
+        nav h1 {
+          flex-direction: column;
+          align-items: center;
         }
 
         .link {
-          padding: 0.4rem 0.8rem;
-          font-size: 0.9rem;
+          width: 100%;
+          max-width: 300px;
+          text-align: center;
+          margin: 3px 0;
+        }
+
+        h1 {
+          font-size: 22px;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+
+        ul {
+          padding-left: 15px;
         }
 
         .thumbnail {
-          width: 60px;
+          width: 70px;
         }
 
         .content-table {
-          font-size: 0.8rem;
+          font-size: 14px;
         }
 
         .content-table th,
         .content-table td {
-          padding: 6px 2px;
-        }
-      }
-
-      /* Стили для печати */
-      @media print {
-        nav,
-        .back-to-top {
-          display: none;
-        }
-
-        body {
-          padding: 0;
-          background: white;
+          padding: 6px;
         }
       }
     </style>
   </head>
   <body>
     <div class="container-fluid">
-      <link
-        rel="icon"
-        width="30"
-        height="30"
-        href="https://static.vecteezy.com/system/resources/thumbnails/049/767/291/small/open-blank-book-mockup-with-white-paper-pages-isolated-on-transparent-background-cutout-png.png"
-      />
-
-      <p><a id="up"> </a></p>
       <nav>
         <h1>
           <a class="link active" href="index.html">ГЛАВНАЯ •</a>
@@ -313,32 +178,22 @@
         </h1>
       </nav>
 
-      <h1><a id="nav">Навигация</a></h1>
+      <h1 id="nav">Навигация</h1>
       <ul>
         <li><a class="link" href="#intro">Вступление</a></li>
         <li><a class="link" href="#whom">Для кого этот курс</a></li>
         <li><a class="link" href="#what">Что получите от курса</a></li>
         <li><a class="link" href="#gurant">Гарантии</a></li>
-        <li>
-          <a href="#review" target="_self"
-            ><img height="10px" src="otzivi.jpg"
-          /></a>
-        </li>
+        <li><a class="link" href="#review">Отзывы</a></li>
         <li><a class="link" href="#table-section">Таблица материалов</a></li>
       </ul>
 
-      <h2><a id="intro">Вступление</a></h2>
+      <h2 id="intro">Вступление</h2>
       <figure>
-        <img
-          src="books1.jpg"
-          width="450"
-          height="200"
-          alt="Image of books"
-          class="img-fluid"
-        />
-        <br />
+        <img src="books1.jpg" alt="Image of books" class="img-fluid" />
         <figcaption>Пример изображения книг</figcaption>
       </figure>
+
       <figure>
         <a href="books4.png" target="_blank">
           <img
@@ -347,155 +202,58 @@
             alt="Увеличенное изображение книг"
           />
         </a>
-        <figcaption>
-          Ещё пример изображения книг (кликните для увеличения изображения
-          600x400)
-        </figcaption>
+        <figcaption>Ещё пример изображения книг</figcaption>
       </figure>
 
       <p>
-        Десятки
-        <a
-          href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BD%D0%B8%D0%B3%D0%B0"
-          target="_blank"
-          >книг</a
-        >, сотни статей, горы отчетов... Информационный поток захлестывает, а
-        времени все меньше. <br />Вы читаете медленно, постоянно отвлекаетесь и
-        через страницу забываете, о чем только что прочитали, Вы постоянно
-        бросаете чтение...
-        <i>Хватит это терпеть!</i>
-        <br />Наш курс — это система. Мы учим не просто скорочтению, а
-        интеллектуальной работе с текстом и навыкам сохранения мотивации. От
-        быстрого определения ценности материала <br />
-        до техник конспектирования и запоминания.. Это Ваш личный апгрейд для
-        мозга. <br />
+        Десятки книг, сотни статей, горы отчетов... Информационный поток
+        захлестывает, а времени все меньше.<br />
+        Вы читаете медленно, постоянно отвлекаетесь и через страницу забываете,
+        о чем только что прочитали...<br />
+        Наш курс — это система. Мы учим интеллектуальной работе с текстом.
       </p>
 
-      <h2><a id="whom">Для кого этот курс?</a></h2>
+      <h2 id="whom">Для кого этот курс?</h2>
       <ul>
-        <li>
-          <u><b>Студентов и аспирантов</b></u>
-        </li>
-        <ol>
-          <li>Чтобы быстрее и качественнее усваивать учебный материал.</li>
-          <li>Готовиться к экзаменам и писать научные работы.</li>
-        </ol>
-      </ul>
-      <ul>
-        <li>
-          <u><b>Специалистов и руководителей</b></u>
-        </li>
-        <ol>
-          <li>
-            Чтобы оперативно анализировать отчеты, профессиональную литературу и
-            новости рынка,
-          </li>
-          <li>тем самым принимая более обоснованные решения.</li>
-        </ol>
-      </ul>
-      <ul>
-        <li>
-          <u><b>Всех, кто занимается саморазвитием</b></u>
-        </li>
-        <ol>
-          <li>
-            Чтобы наконец-то читать больше книг без ущерба для работы и отдыха,
-          </li>
-          <li>расширяя кругозор.</li>
-        </ol>
-      </ul>
-      <ul>
-        <li>
-          <u><b>Блогеров, копирайтеров, исследователей</b></u>
-        </li>
-        <ol>
-          <li>чья работа напрямую связана с анализом больших объемов текста</li>
-        </ol>
-        <figure>
-          <img
-            src="https://cdn.culture.ru/images/e02fb1fe-c590-500c-a929-547a42542eb6"
-            alt="students reading"
-            height="250"
-            width="470"
-            class="img-fluid"
-          />
-          <figcaption>
-            Студенты нашего курса(читают книги используя полученные знания о
-            скорочтении)
-          </figcaption>
-        </figure>
+        <li><b>Студентов и аспирантов</b></li>
+        <li><b>Специалистов и руководителей</b></li>
+        <li><b>Всех, кто занимается саморазвитием</b></li>
+        <li><b>Блогеров, копирайтеров, исследователей</b></li>
       </ul>
 
-      <h2><a id="what">Что Вы получите в результате?</a></h2>
-      <p>К концу курса Вы:</p>
+      <figure>
+        <img
+          src="https://cdn.culture.ru/images/e02fb1fe-c590-500c-a929-547a42542eb6"
+          alt="students reading"
+          class="img-fluid"
+        />
+        <figcaption>Студенты нашего курса</figcaption>
+      </figure>
+
+      <h2 id="what">Что Вы получите в результате?</h2>
       <ul>
-        <li>
-          Увеличите скорость чтения в 2-3 раза (в среднем участники выходят на
-          показатель 600-1000 слов в минуту с высоким уровнем понимания).
-        </li>
-        <li>
-          Научитесь «сканировать» текст, за 1-2 минуты определяя его ценность и
-          главную мысль.
-        </li>
-        <li>
-          Улучшите концентрацию внимания и сможете читать продуктивно даже в
-          условиях нехватки времени и внешних помех.
-        </li>
-        <li>
-          Начнете запоминать до <i>80%</i> ключевой информации без многократного
-          перечитывания.
-        </li>
-        <li>
-          Освоите техники эффективного конспектирования (например, ментальные
-          карты и корнельные заметки), которые превратят прочитанное в удобную
-          для использования базу знаний.
-        </li>
-        <li>
-          Создадите персональную систему работы с информацией, которая позволит
-          вам быть в курсе важного, не чувствуя себя перегруженным.
-        </li>
+        <li>Увеличите скорость чтения в 2-3 раза</li>
+        <li>Научитесь «сканировать» текст</li>
+        <li>Улучшите концентрацию внимания</li>
+        <li>Начнете запоминать до 80% ключевой информации</li>
+        <li>Освоите техники эффективного конспектирования</li>
       </ul>
 
-      <h2><a id="gurant">Гарантии</a></h2>
+      <h2 id="gurant">Гарантии</h2>
       <p>
-        Мы настолько уверены в результате, что даем гарантию 14 дней. Если после
-        первой недели обучения вы поймете, что курс вам не подходит, мы вернем
-        деньги без лишних вопросов. <br />
-        Не просто пройдите курс. Приобретите навык, который будет экономить вам
-        сотни часов каждый год.
+        Мы настолько уверены в результате, что даем гарантию 14 дней.<br />
+        Если после первой недели обучения вы поймете, что курс вам не подходит,
+        мы вернем деньги.
       </p>
 
-      <h2><a id="review">Отзывы</a></h2>
+      <h2 id="review">Отзывы</h2>
       <p>"Очень круто я наконец понял достоевского" - Андрей</p>
       <p>"Очень круто я теперь запоминаю что читаю" - Софья</p>
       <p>"Cначала не понравилось а потом понравилось" - Иван</p>
 
-      <h4><a class="link back-to-top" href="#up">Наверх</a></h4>
+      <h4><a class="link" href="#nav">Наверх</a></h4>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <script>
-      // Установка текущей даты в форме
-      document.addEventListener("DOMContentLoaded", function () {
-        const today = new Date().toISOString().split("T")[0];
-        const dateField = document.getElementById("message_date");
-        if (dateField) {
-          dateField.value = today;
-        }
-      });
-
-      // Подсветка активной ссылки в навигации
-      const currentPage =
-        window.location.pathname.split("/").pop() || "index.html";
-      document.querySelectorAll("nav .link").forEach((link) => {
-        if (link.getAttribute("href") === currentPage) {
-          link.classList.add("active");
-        } else {
-          link.classList.remove("active");
-        }
-      });
-    </script>
   </body>
 </html>
